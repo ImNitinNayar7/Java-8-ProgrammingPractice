@@ -1,0 +1,21 @@
+ Method reference to an instance method of an object
+ *********************************************************************************************************
+ package JavaLambdaExpression01;
+
+@FunctionalInterface
+interface MyInterface {
+	void display();
+}
+
+public class Example01 {
+	public void myMethod() {
+		System.out.println("Instance Method");
+	}
+
+	public static void main(String[] args) {
+		Example01 example01 = new Example01();
+		MyInterface mi = example01::myMethod;
+		mi.display();
+
+	}
+}
