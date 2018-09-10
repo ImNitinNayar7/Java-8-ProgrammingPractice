@@ -1,3 +1,5 @@
+Example 1: Java Lambda Expression with no parameter
+
 package JavaLambdaExpression01;
 
 @FunctionalInterface
