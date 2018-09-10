@@ -1,0 +1,18 @@
+Example 3: Java Lambda Expression with Multiple Parameters
+***************************************************************************************************
+package JavaLambdaExpression01;
+
+@FunctionalInterface
+interface StringConcat {
+	public String sconcat(String str1, String str2);
+}
+
+public class Example01 {
+	public static void main(String[] args) {
+
+		// lambda expression with multiple arguments
+		StringConcat sc = (str1, str2) -> str1 + str2;
+		System.out.println(sc.sconcat("Hello", "World"));
+		System.out.println(sc.sconcat("Stree", "Movie"));
+	}
+}
