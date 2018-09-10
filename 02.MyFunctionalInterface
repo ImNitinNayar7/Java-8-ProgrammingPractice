@@ -1,0 +1,19 @@
+Example 2: Java Lambda Expression with single parameter
+
+
+
+package JavaLambdaExpression01;
+
+@FunctionalInterface
+interface MyFunctionalInterface {
+	// A method with single parameter
+	public int incrementByFive(int a);
+}
+
+public class Example01 {
+	public static void main(String[] args) {
+		// lambda expression with single parameter num
+		MyFunctionalInterface mfi = a -> (a + 5);
+		System.out.println(mfi.incrementByFive(10));
+	}
+}
