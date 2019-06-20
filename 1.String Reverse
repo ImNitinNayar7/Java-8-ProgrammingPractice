@@ -36,3 +36,33 @@ public class Main
 
   }
 }
+charAt
+class Gfg { 
+	public static void main(String args[]) 
+	{ 
+		String s = "Welcome! to Geeksforgeeks Planet"; 
+
+		char ch = s.charAt(3); 
+		System.out.println(ch); 
+        char ch1= s.charAt(4);
+      		System.out.println(ch1); 
+
+      
+
+	 
+	} 
+} 
+
+StringToCharArray
+public class Main
+{
+  public static void main (String[]args)
+  {
+    String str= " BufferBuffer ";
+    char[] stringToChar= str.trim().toCharArray();
+    for(char ch:stringToChar){
+        System.out.print(ch+" ,");
+    }
+  }
+}
+op->
