@@ -1,0 +1,17 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    String name= "OutOfMemoryError Myjava";
+	    System.out.println(stringReverse(name));
+	   
+	    
+		System.out.println("Hello World");
+	}
+	 public static String stringReverse(String name){
+	    if( null==name || name.length()<=1){
+	    return name;
+	    
+	    }
+	    return stringReverse(name.substring(1))+name.charAt(0);
+	 }
+}
