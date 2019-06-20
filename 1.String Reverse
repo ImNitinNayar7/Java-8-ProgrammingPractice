@@ -15,3 +15,24 @@ public class Main
 	    return stringReverse(name.substring(1))+name.charAt(0);
 	 }
 }
+
+
+Recursion
+
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+    reduceByOne (10);
+  }
+  public static void reduceByOne (int n)
+  {
+    if (n > 0)
+      {
+	  reduceByOne (n - 1);
+      }
+      System.out.System.out.println(n + " ");
+
+  }
+}
